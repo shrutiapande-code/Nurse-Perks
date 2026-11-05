@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A practical directory of nurse discounts, freebies, and professional perks in the United States.">
+<title>Nurse Perks — Discounts & Benefits Directory</title>
+<style>
+:root{--ink:#1e293b;--muted:#64748b;--paper:#f7f8fc;--card:#fff;--line:#e5eaf1;--accent:#176b68;--accent2:#e5f3f1}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:linear-gradient(125deg,#123f50,#176b68);color:#fff;padding:54px 22px 42px}
+.wrap{max-width:1120px;margin:auto;padding:0 22px}
+.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.76rem;font-weight:700;opacity:.82}
+h1{font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.06;margin:12px 0}
+header p{max-width:700px;color:#e2f1ef;font-size:1.08rem}
+.pills{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.pill{border:1px solid #ffffff66;border-radius:999px;padding:6px 12px;font-size:.86rem}
+main{padding:28px 0 60px}.notice{background:#fff8e8;border:1px solid #f1dfb6;border-radius:14px;padding:14px 17px;margin:0 0 24px;color:#604b20}
+.tools{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 22px}.tools input,.tools select{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;font:inherit;color:var(--ink)}.tools input{flex:1;min-width:220px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 26px}.navbtn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 13px;cursor:pointer;font:inherit;color:var(--ink)}.navbtn.active{background:var(--accent);border-color:var(--accent);color:white}
+h2{font-size:1.45rem;margin:30px 0 13px}.section-intro{color:var(--muted);margin-top:-7px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:17px;display:flex;flex-direction:column;min-height:190px;box-shadow:0 3px 12px #152b3b08}
+.card h3{margin:0 0 7px;font-size:1.08rem}.card p{margin:0 0 13px;color:#475569;font-size:.93rem}.tag{display:inline-block;background:var(--accent2);color:#155e59;border-radius:6px;padding:3px 8px;font-size:.75rem;font-weight:700;margin-bottom:10px;width:max-content}
+.card a{margin-top:auto;color:var(--accent);font-weight:700;text-decoration:none}.card a:hover{text-decoration:underline}
+.small{font-size:.86rem;color:var(--muted)}.empty{display:none;padding:25px;text-align:center;color:var(--muted);background:#fff;border-radius:12px}
+.linklist{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}.linklist a{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;text-decoration:none;color:var(--accent);font-weight:650}
+footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:.88rem}a:focus,button:focus,input:focus,select:focus{outline:3px solid #9ad3cc;outline-offset:2px}
+@media(max-width:600px){header{padding-top:38px}.wrap{padding:0 16px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="eyebrow">The practical nurse savings guide</div>
+<h1>Nurse Perks</h1>
+<p>A bookmarkable directory of discounts, freebies, and benefits for nurses and healthcare workers in the U.S. Browse by category, search a brand, and check the eligibility details before you buy.</p>
+<div class="pills"><span class="pill">Retail & everyday shopping</span><span class="pill">Shoes & workwear</span><span class="pill">Travel & food</span><span class="pill">Professional resources</span></div>
+</div></header>
+<main class="wrap">
+<div class="notice"><strong>Quick note:</strong> Offers, discount amounts, eligible job titles, exclusions, and expiration dates can change. Treat the percentages below as a guide—not a guaranteed checkout price—and confirm the current terms on the linked site. Some offers require an active license or verification through ID.me or SheerID.</div>
+<div class="tools"><input id="search" type="search" placeholder="Search brands, categories, or perks…" aria-label="Search discounts"><select id="eligibility" aria-label="Filter by eligibility"><option value="all">All eligibility types</option><option value="nurse">Nurse-specific listing</option><option value="healthcare">Healthcare worker / medical professional</option><option value="member">Membership or professional perk</option></select></div>
+<nav id="filters" aria-label="Discount categories">
+<button class="navbtn active" data-filter="all">All</button><button class="navbtn" data-filter="shoes">Shoes & apparel</button><button class="navbtn" data-filter="shopping">Shopping & lifestyle</button><button class="navbtn" data-filter="tech">Tech & phone</button><button class="navbtn" data-filter="travel">Travel & entertainment</button><button class="navbtn" data-filter="food">Food & drinks</button><button class="navbtn" data-filter="career">Career & education</button>
+</nav>
+<div id="cards" class="grid">
+<article class="card" data-cat="shoes" data-elig="nurse"><span class="tag">Shoes & apparel</span><h3>Brooks</h3><p>Listed at 25% off eligible items for verified nurses through its Community Heroes program.</p><a href="https://www.brooksrunning.com/" target="_blank" rel="noopener">Visit Brooks ↗</a></article>
+<article class="card" data-cat="shoes" data-elig="nurse"><span class="tag">Shoes & apparel</span><h3>HOKA</h3><p>Listed at 15% off for eligible U.S. nurses; exclusions may apply.</p><a href="https://www.hoka.com/" target="_blank" rel="noopener">Visit HOKA ↗</a></article>
+<article class="card" data-cat="shoes" data-elig="nurse"><span class="tag">Shoes & apparel</span><h3>On</h3><p>Listed at 15% off for U.S. nurses through verification.</p><a href="https://www.on.com/" target="_blank" rel="noopener">Visit On ↗</a></article>
+<article class="card" data-cat="shoes" data-elig="nurse"><span class="tag">Shoes & apparel</span><h3>adidas</h3><p>Listed at 30% off full-price items for verified nurses. Check exclusions and eligible products.</p><a href="https://www.adidas.com/us/discount-program" target="_blank" rel="noopener">Nurse / medical discount program ↗</a></article>
+<article class="card" data-cat="shoes" data-elig="nurse"><span class="tag">Shoes & apparel</span><h3>Crocs</h3><p>Listed at 15% off for nurses; verify current healthcare-worker eligibility.</p><a href="https://www.crocs.com/discount-programs.html" target="_blank" rel="noopener">Discount programs ↗</a></article>
+<article class="card" data-cat="shoes" data-elig="healthcare"><span class="tag">Shoes & apparel</span><h3>ASICS</h3><p>AACN’s 2026 roundup lists medical-professional pricing: 25% off full-price footwear and 30% off qualifying apparel/accessories.</p><a href="https://www.asics.com/" target="_blank" rel="noopener">Visit ASICS ↗</a></article>
+<article class="card" data-cat="shoes" data-elig="healthcare"><span class="tag">Shoes & apparel</span><h3>New Balance</h3><p>Listed in nurse-discount roundups at 15% off eligible online purchases after verification.</p><a href="https://www.newbalance.com/" target="_blank" rel="noopener">Visit New Balance ↗</a></article>
+<article class="card" data-cat="shoes" data-elig="healthcare"><span class="tag">Shoes & apparel</span><h3>Under Armour</h3><p>Listed at 20% off for verified nurses and healthcare workers.</p><a href="https://www.underarmour.com/en-us/t/idme/" target="_blank" rel="noopener">Verify / shop ↗</a></article>
+<article class="card" data-cat="shoes" data-elig="healthcare"><span class="tag">Shoes & apparel</span><h3>Carhartt</h3><p>AACN lists 15% off for verified healthcare workers, including eligible nurses.</p><a href="https://www.carhartt.com/" target="_blank" rel="noopener">Visit Carhartt ↗</a></article>
+<article class="card" data-cat="shoes" data-elig="healthcare"><span class="tag">Shoes & apparel</span><h3>Nike</h3><p>Medical professionals may qualify for a discount after SheerID verification; amount and exclusions vary.</p><a href="https://www.nike.com/" target="_blank" rel="noopener">Visit Nike ↗</a></article>
+<article class="card" data-cat="shoes" data-elig="healthcare"><span class="tag">Shoes & apparel</span><h3>Madewell</h3><p>Listed at 15% off online and in-store for verified nurses.</p><a href="https://www.madewell.com/" target="_blank" rel="noopener">Visit Madewell ↗</a></article>
+<article class="card" data-cat="shoes" data-elig="healthcare"><span class="tag">Shoes & apparel</span><h3>Quince</h3><p>Listed at 10% off for U.S. nurses through ID.me.</p><a href="https://www.quince.com/" target="_blank" rel="noopener">Visit Quince ↗</a></article>
+<article class="card" data-cat="shopping" data-elig="nurse"><span class="tag">Shopping & lifestyle</span><h3>YETI</h3><p>Listed at 20% off eligible gear for verified nurses.</p><a href="https://www.yeti.com/" target="_blank" rel="noopener">Visit YETI ↗</a></article>
+<article class="card" data-cat="shopping" data-elig="nurse"><span class="tag">Shopping & lifestyle</span><h3>Paula’s Choice</h3><p>Listed at 20% off for nurses through ID.me; check product exclusions.</p><a href="https://www.paulaschoice.com/" target="_blank" rel="noopener">Visit Paula’s Choice ↗</a></article>
+<article class="card" data-cat="shopping" data-elig="healthcare"><span class="tag">Shopping & lifestyle</span><h3>Purple</h3><p>AACN lists 10% off for nurses and healthcare professionals after eligibility verification.</p><a href="https://purple.com/" target="_blank" rel="noopener">Visit Purple ↗</a></article>
+<article class="card" data-cat="shopping" data-elig="healthcare"><span class="tag">Shopping & lifestyle</span><h3>Eyemart Express</h3><p>AACN lists 20% off prescription eyewear, frames, lens upgrades, sunglasses, and accessories with qualifying medical ID.</p><a href="https://www.eyemartexpress.com/" target="_blank" rel="noopener">Visit Eyemart Express ↗</a></article>
+<article class="card" data-cat="tech" data-elig="healthcare"><span class="tag">Tech & phone</span><h3>Verizon</h3><p>AACN lists discounted mobile or home internet pricing for verified nurses / healthcare workers. Check plan eligibility.</p><a href="https://www.verizon.com/" target="_blank" rel="noopener">Check Verizon offers ↗</a></article>
+<article class="card" data-cat="tech" data-elig="healthcare"><span class="tag">Tech & phone</span><h3>Samsung</h3><p>Healthcare-worker member pricing may be available on eligible devices; offers vary by product and verification.</p><a href="https://www.samsung.com/us/shop/offer-program/" target="_blank" rel="noopener">Samsung offer programs ↗</a></article>
+<article class="card" data-cat="tech" data-elig="healthcare"><span class="tag">Tech & phone</span><h3>HP Frontline Heroes</h3><p>Special member-store pricing for eligible frontline healthcare workers may be available.</p><a href="https://www.hp.com/" target="_blank" rel="noopener">Visit HP ↗</a></article>
+<article class="card" data-cat="travel" data-elig="nurse"><span class="tag">Travel & entertainment</span><h3>Hotels.com</h3><p>Listed at 10% off for nurses through ID.me; compare the final rate with public prices before booking.</p><a href="https://www.hotels.com/" target="_blank" rel="noopener">Visit Hotels.com ↗</a></article>
+<article class="card" data-cat="travel" data-elig="healthcare"><span class="tag">Travel & entertainment</span><h3>Caesars Rewards / Hotels</h3><p>AACN’s 2026 roundup lists a nurse offer of 15% off the lowest available rate after verification.</p><a href="https://www.caesars.com/" target="_blank" rel="noopener">Visit Caesars ↗</a></article>
+<article class="card" data-cat="travel" data-elig="healthcare"><span class="tag">Travel & entertainment</span><h3>Walt Disney World</h3><p>AACN reported a Nurses Week promotional rate for 2026. This may be seasonal or date-limited—call or check current offers.</p><a href="https://disneyworld.disney.go.com/" target="_blank" rel="noopener">Visit Walt Disney World ↗</a></article>
+<article class="card" data-cat="food" data-elig="nurse"><span class="tag">Food & drinks</span><h3>Peet’s Coffee</h3><p>AACN lists 10% off for nurses after verification at checkout.</p><a href="https://www.peets.com/" target="_blank" rel="noopener">Visit Peet’s ↗</a></article>
+<article class="card" data-cat="food" data-elig="healthcare"><span class="tag">Food & drinks</span><h3>Outback Steakhouse</h3><p>AACN’s 2026 list reports 10% off the check with a valid medical ID; confirm local participation.</p><a href="https://www.outback.com/" target="_blank" rel="noopener">Visit Outback ↗</a></article>
+<article class="card" data-cat="food" data-elig="nurse"><span class="tag">Food & drinks</span><h3>Thrive Market</h3><p>AACN lists a free one-year membership offer for verified nurses through ID.me. Check current availability and renewal terms.</p><a href="https://thrivemarket.com/" target="_blank" rel="noopener">Visit Thrive Market ↗</a></article>
+<article class="card" data-cat="food" data-elig="nurse"><span class="tag">Food & drinks</span><h3>Home Chef</h3><p>AACN’s 2026 roundup lists a first-box discount and ongoing savings for verified nurses; offers may change.</p><a href="https://www.homechef.com/" target="_blank" rel="noopener">Visit Home Chef ↗</a></article>
+<article class="card" data-cat="career" data-elig="member"><span class="tag">Career & education</span><h3>American Association of Critical-Care Nurses (AACN)</h3><p>Membership offers professional resources, communities, clinical content, and continuing-education opportunities. Some benefits require paid membership.</p><a href="https://www.aacn.org/" target="_blank" rel="noopener">Explore AACN ↗</a></article>
+<article class="card" data-cat="career" data-elig="member"><span class="tag">Career & education</span><h3>ANA (American Nurses Association)</h3><p>Membership can include professional resources, advocacy, continuing education, career tools, and member savings; benefits depend on membership type.</p><a href="https://www.nursingworld.org/membership/" target="_blank" rel="noopener">Explore ANA membership ↗</a></article>
+<article class="card" data-cat="career" data-elig="member"><span class="tag">Career & education</span><h3>Free CE opportunities</h3><p>Check professional associations, employers, and nursing education providers for complimentary CE modules and webinars. Requirements vary by state and license renewal.</p><a href="https://www.nurse.com/ce/" target="_blank" rel="noopener">Browse Nurse.com CE ↗</a></article>
+</div>
+<div id="empty" class="empty">No matches. Try another search or category.</div>
+<h2>Start here: free verification and discount directories</h2>
+<p class="section-intro">These are the best places to uncover additional offers and confirm current terms.</p>
+<div class="linklist">
+<a href="https://www.id.me/shopping-discounts" target="_blank" rel="noopener">ID.me Shop — nurse discounts ↗</a>
+<a href="https://www.id.me/individuals/group-discounts/nurses" target="_blank" rel="noopener">ID.me — verify nurse status ↗</a>
+<a href="https://www.sheerid.com/shoppers/" target="_blank" rel="noopener">SheerID — verify eligibility ↗</a>
+<a href="https://www.nurse.com/blog/deals-discounts-and-perks-for-nurses/" target="_blank" rel="noopener">Nurse.com — perks guide ↗</a>
+<a href="https://www.aacn.org/blog/2026-national-nurses-week-freebies-and-discounts" target="_blank" rel="noopener">AACN — 2026 freebies & discounts ↗</a>
+<a href="https://www.dealhack.com/blog/nurse-discounts-guide" target="_blank" rel="noopener">Dealhack — nurse discount guide ↗</a>
+<a href="https://www.nursediscounts.org/" target="_blank" rel="noopener">NurseDiscounts.org — category lists ↗</a>
+<a href="https://www.nurseperks.com/" target="_blank" rel="noopener">NursePerks — nurse community & deals ↗</a>
+</div>
+<h2>How to get the discount</h2>
+<ol>
+<li>Create a free account with ID.me and/or SheerID and complete nurse or healthcare-worker verification.</li>
+<li>At checkout, look for “Verify with ID.me,” “Healthcare,” “Medical professional,” or “First responder” discount links.</li>
+<li>Compare the discounted price with sale prices, shipping, and membership costs. A percentage off is not always the lowest final price.</li>
+<li>For in-person offers, ask before paying and bring your work ID or professional credentials. Local participation can vary.</li>
+</ol>
+<p class="small"><strong>Who may qualify?</strong> ID.me’s U.S. nurse eligibility page includes RNs, LPNs/LVNs, NPs, CRNAs, CNAs, nurse aides, PCTs, public-health nurses, and other listed roles. Student nurses and nursing students may have separate student offers, but should not assume they qualify for nurse-only programs.</p>
+</div>
+</main>
+<footer><div class="wrap">Compiled November 5, 2026. This independent directory is for convenience and is not affiliated with the listed brands. Always confirm eligibility, exclusions, expiration dates, and final pricing with the provider.</div></footer>
+<script>
+const search=document.getElementById('search'), eligibility=document.getElementById('eligibility');
+const buttons=[...document.querySelectorAll('.navbtn')], cards=[...document.querySelectorAll('.card')];
+let category='all';
+function update(){
+ const q=search.value.toLowerCase().trim(), e=eligibility.value; let count=0;
+ cards.forEach(c=>{
+  const okCat=category==='all'||c.dataset.cat===category;
+  const okElig=e==='all'||c.dataset.elig===e|| (e==='healthcare'&&c.dataset.elig==='nurse') || (e==='nurse'&&c.dataset.elig==='healthcare'&&false);
+  const okText=c.innerText.toLowerCase().includes(q);
+  c.style.display=okCat&&okElig&&okText?'flex':'none'; if(c.style.display!=='none')count++;
+ });
+ document.getElementById('empty').style.display=count?'none':'block';
+}
+buttons.forEach(b=>b.addEventListener('click',()=>{category=b.dataset.filter;buttons.forEach(x=>x.classList.toggle('active',x===b));update()}));
+search.addEventListener('input',update);eligibility.addEventListener('change',update);
+</script>
+</body></html>
